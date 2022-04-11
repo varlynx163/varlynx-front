@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import { styled as styledMUI } from '@mui/material/styles';
 import ButtonMUI from '@mui/material/Button';
+import { Box } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
 import { Flex } from "../common/Flex";
 import Logo from './Logo';
 import Menu from "./Menu";
-import { Box } from "@mui/material";
-import Typography from "@mui/material/Typography";
 
 const Button = styledMUI(ButtonMUI)({
   backgroundColor: "#000",
@@ -74,8 +75,9 @@ interface Slider {
 const slider: Slider = {
   items: [
     { text: "JavaScript Development" , id: 1 },
-    { text: " Use the power of JavaScript in your project" , id: 2 },
-    { text: "Open your product to the world" , id: 3 },
+    { text: "React / Redux / Redux-Saga " , id: 2 },
+    { text: "React Hooks / Styled Components" , id: 3 },
+    { text: "Fast and quality integration" , id: 4 },
   ],
   startPosition: 0,
   duration: 4
