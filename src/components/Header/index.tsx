@@ -78,7 +78,7 @@ const slider: Slider = {
     { text: "Open your product to the world" , id: 3 },
   ],
   startPosition: 0,
-  duration: 5
+  duration: 4
 };
 
 const Header = () => {
@@ -95,7 +95,6 @@ const Header = () => {
     };
   }, [active, items.length]);
 
-  console.log(active)
   return (
     <HeaderWrapper slidesDuration={duration}>
       <Flex justify="space-around">
