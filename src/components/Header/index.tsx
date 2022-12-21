@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
-import { styled as styledMUI } from '@mui/material/styles';
-import ButtonMUI from '@mui/material/Button';
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 import { Flex } from "../common/Flex";
 import Logo from './Logo';
 import Menu from "./Menu";
-
-const Button = styledMUI(ButtonMUI)({
-  backgroundColor: "#000",
-  fontSize: 24,
-  border: '5px solid #762a89',
-  '&:hover': {
-    backgroundColor: '#762a89'
-  },
-});
+import OrderButton from './components/OrderButton'
 
 const ItemWrapper = styled(Box)`
   position: absolute;
@@ -101,7 +91,7 @@ const Header = () => {
     <HeaderWrapper slidesDuration={duration}>
       <Flex justify="space-around">
         <Logo />
-        <Button variant="contained">Make an order</Button>
+        <OrderButton />
         <Menu />
       </Flex>
       <Flex grow={2}>

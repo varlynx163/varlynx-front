@@ -14,7 +14,7 @@ module.exports = {
 	entry: 'development' === process.env.NODE_ENV ? [
 		'./src/index.tsx', // in development
 	] : [
-		'./src/index.prod.js', // in production
+		'./src/index.tsx', // in production
 	],
 
 	// output files and chunks
