@@ -43,7 +43,7 @@ const HeaderWrapper = styled.header`
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(121,9,121,1) 0%, rgba(0,217,255,1) 100%);
   padding: 20px;
-  height: ${window.document.documentElement.clientHeight};
+  height: ${window?.document?.documentElement?.clientHeight};
   .active {
     animation: fadeIn 1s, fadeOut 1s ${props => props.slidesDuration - 1 + 's'};
     animation-fill-mode: forwards;
