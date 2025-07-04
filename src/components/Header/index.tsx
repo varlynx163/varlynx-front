@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 import { Flex } from "../common/Flex";
-import Logo from './Logo';
+import { Logo } from './Logo';
 import Menu from "./Menu";
 import OrderButton from './components/OrderButton'
 
